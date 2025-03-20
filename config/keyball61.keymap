@@ -80,10 +80,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &kp HOME        &kp ESCAPE       &mo 6       &mkp MCLK     &none          &kp LEFT_SHIFT
+&trans  &trans  &trans  &trans  &trans  &trans                          &kp HOME        &kp ESCAPE       &none       &mkp MCLK     &none          &kp LEFT_SHIFT
 &trans  &trans  &trans  &trans  &trans  &trans                          &kp END         &kp ENTER        &mkp LCLK   &mkp RCLK     &trans         &kp LEFT_CONTROL
 &trans  &trans  &trans  &trans  &trans  &trans                          &kp UP_ARROW    &kp BACKSPACE    &kp DELETE  &kp TAB       &kp PAGE_UP    &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &sl 4       &kp LEFT_WIN  &kp PAGE_DOWN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &sl 4       &kp LEFT_WIN  &kp PAGE_DOWN  &mo 6
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans                                                     &trans         &trans
             >;
         };
