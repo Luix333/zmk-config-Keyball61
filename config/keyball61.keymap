@@ -10,6 +10,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 //#include <dt-bindings/zmk/pointing.h>
 
@@ -57,11 +58,11 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &trans          &kp UP_ARROW    &kp RIGHT_ARROW  &kp LEFT_SHIFT
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ALT     &kp LEFT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &kp DELETE      &trans          &trans           &kp LEFT_WIN
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans          &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                   &trans           &trans
             >;
         };
 
@@ -79,11 +80,11 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                          &kp HOME        &kp ESCAPE       &trans      &mkp MCLK     &mo 5           &mo 6
-&trans  &trans  &trans  &trans  &trans  &trans                          &kp END         &kp ENTER        &mkp LCLK   &mkp RCLK     &kp LEFT_SHIFT  &kp LEFT_CONTROL
-&trans  &trans  &trans  &trans  &trans  &trans                          &kp UP_ARROW    &kp BACKSPACE    &kp DELETE  &kp TAB       &kp PAGE_UP     &to 0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &kp LEFT_WIN  &kp PAGE_DOWN   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0           &trans                                                     &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                          &kp HOME        &kp ESCAPE       &to 0       &mkp MCLK     &mo 5           &mo 6
+&trans  &trans  &trans  &trans  &trans  &trans                                          &kp END         &kp ENTER        &mkp LCLK   &mkp RCLK     &kp LEFT_SHIFT  &kp LEFT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans                                          &kp UP_ARROW    &kp BACKSPACE    &kp DELETE  &kp TAB       &kp PAGE_UP     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &kp LEFT_WIN  &kp PAGE_DOWN   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &lt 1 LEFT_CONTROL  &lt 1 LEFT_CONTROL  &lt 2 SPACE                                                &kp LEFT_ALT    &trans
             >;
         };
 
