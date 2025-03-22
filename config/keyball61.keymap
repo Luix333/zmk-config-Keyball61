@@ -9,6 +9,9 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
 //#include <dt-bindings/zmk/pointing.h>
 
 &lt {
@@ -29,8 +32,18 @@
     behaviors {
         lmt: lmt {
             compatible = "zmk,behavior-hold-tap";
-            label = "LMT";
+            label = "Tap=&tog; Hold=&mo";
             bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
+
+        lmt2: lmt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Tap=&tog; Hold=&kp";
+            bindings = <&kp>, <&tog>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -90,10 +103,10 @@
             label = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                            &kp HOME        &kp ESCAPE       &to 0       &mkp MCLK     &mo 5           &mo 6
-&trans  &trans  &trans  &trans  &trans  &trans                            &kp END         &kp ENTER        &mkp LCLK   &mkp RCLK     &kp LEFT_SHIFT  &kp LEFT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans                            &kp END         &kp ENTER        &mkp LCLK   &mkp RCLK     &kp LEFT_SHIFT  &lmt2 LEFT_CONTROL 4
 &trans  &trans  &trans  &trans  &trans  &trans                            &kp UP_ARROW    &kp BACKSPACE    &kp DELETE  &kp TAB       &kp PAGE_UP     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &kp LEFT_WIN  &kp PAGE_DOWN   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &lmt 1 0  &lmt 1 0        &lt 2 SPACE                                                &kp LEFT_ALT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &lmt 1 4  &lmt 1 4        &lt 2 SPACE                                                &kp LEFT_ALT    &trans
             >;
         };
 
