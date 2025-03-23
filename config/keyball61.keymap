@@ -10,6 +10,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
 //#include <dt-bindings/zmk/pointing.h>
 
 &lt {
@@ -19,7 +21,7 @@
 };
 
 &mt {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <250>;
     flavor = "tap-preferred";
     quick-tap-ms = <150>;
 };
@@ -44,7 +46,7 @@
             bindings = <&kp>, <&tog>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
         };
 
@@ -54,7 +56,7 @@
             bindings = <&mkp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             flavor = "balanced";
         };
 
