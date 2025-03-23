@@ -95,11 +95,11 @@
 
         number_layer {
             bindings = <
-&soft_off  &kp F1          &kp F2         &kp F3          &kp F4             &kp F5                                   &kp HOME        &kp N7           &kp N8  &kp N9      &kp F11    &kp DELETE
-&trans     &bt BT_CLR_ALL  &kp PAGE_UP    &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS  &trans
-&trans     &bt BT_CLR      &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT                               &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp PLUS   &trans
-&trans     &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4     &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp EQUAL  &trans
-&trans     &trans          &trans         &trans          &trans             &trans           &trans  &trans          &trans                                               &trans     &trans
+&trans  &kp F1          &kp F2         &kp F3          &kp F4             &kp F5                                   &kp HOME        &kp N7           &kp N8  &kp N9      &kp F11    &kp DELETE
+&trans  &bt BT_CLR_ALL  &kp PAGE_UP    &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS  &trans
+&trans  &bt BT_CLR      &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT                               &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp PLUS   &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4     &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp EQUAL  &trans
+&trans  &trans          &trans         &trans          &trans             &trans           &trans  &trans          &trans                                               &trans     &trans
             >;
 
             label = "NUM";
@@ -141,11 +141,11 @@
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
             >;
         };
     };
