@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -354,11 +355,11 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&gresc            &kp N1     &kp N2    &kp N3    &kp N4       &kp N5                   &kp N6               &kp N7  &kp N8     &lmt2 MCLK N9  &lt 5 N0   &kp BSPC
-&kp TAB           &kp Q      &kp W     &kp E     &kp R        &kp T                    &kp Y                &kp U   &kp I      &kp O          &kp P      &to 1
-&kp CAPS          &kp A      &kp S     &kp D     &kp F        &kp G                    &kp H                &kp J   &kp K      &kp L          &kp SQT    &kp ENTER
-&kp LEFT_SHIFT    &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N  &kp B  &kp N                &kp M   &kp COMMA  &kp DOT        &kp FSLH   &kp RSHFT
-&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &key_repeat  &kp SPACE  &mo 2  &mo 2  &mt RIGHT_ALT SPACE                                    &kp EQUAL  &kp RCTRL
+&gresc            &kp N1     &kp N2    &kp N3    &kp N4       &kp N5                   &kp N6       &kp N7  &kp N8     &lmt2 MCLK N9  &lt 5 N0   &kp BSPC
+&kp TAB           &kp Q      &kp W     &kp E     &kp R        &kp T                    &kp Y        &kp U   &kp I      &kp O          &kp P      &to 1
+&kp CAPS          &kp A      &kp S     &kp D     &kp F        &kp G                    &kp H        &kp J   &kp K      &kp L          &kp SQT    &kp ENTER
+&kp LEFT_SHIFT    &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N  &kp B  &kp N        &kp M   &kp COMMA  &kp DOT        &kp FSLH   &kp RSHFT
+&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &key_repeat  &kp SPACE  &mo 2  &mo 2  &lt 7 SPACE                                    &kp EQUAL  &kp RCTRL
             >;
         };
 
@@ -434,7 +435,7 @@
 &trans  &kp PIPE  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &trans    &trans  &e_acute  &trans        &trans                  &trans    &u_acute  &i_acute  &o_acute          &trans             &trans
 &trans  &a_acute  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &trans            &trans             &trans
-&trans  &trans    &trans  &trans    &u_diaeresis  &trans  &trans  &trans  &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &trans
+&mo 8   &trans    &trans  &trans    &u_diaeresis  &trans  &trans  &trans  &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &trans
 &trans  &trans    &trans  &trans    &trans        &trans  &trans  &trans  &trans                                          &approx_equal      &trans
             >;
         };
