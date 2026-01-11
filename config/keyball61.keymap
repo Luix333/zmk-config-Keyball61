@@ -432,11 +432,11 @@
 
         special1_layer {
             bindings = <
-&trans  &kp PIPE  &trans      &trans    &trans        &trans                  &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans    &trans      &e_acute  &trans        &trans                  &trans    &u_acute  &i_acute  &o_acute          &trans             &trans
-&trans  &a_acute  &kp DOLLAR  &trans    &trans        &trans                  &trans    &trans    &trans    &trans            &trans             &trans
-&trans  &trans    &trans      &trans    &u_diaeresis  &trans  &trans  &trans  &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &trans
-&trans  &trans    &trans      &trans    &trans        &trans  &trans  &trans  &trans                                          &approx_equal      &trans
+&trans  &kp PIPE  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans    &trans  &e_acute  &trans        &trans                  &trans    &u_acute  &i_acute  &o_acute          &trans             &trans
+&trans  &a_acute  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &trans            &trans             &trans
+&trans  &trans    &trans  &trans    &u_diaeresis  &trans  &trans  &trans  &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &trans
+&trans  &trans    &trans  &trans    &trans        &trans  &trans  &trans  &trans                                          &approx_equal      &trans
             >;
         };
 
