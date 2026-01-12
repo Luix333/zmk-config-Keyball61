@@ -66,10 +66,118 @@
             bindings = <&kp LEFT_CONTROL>, <&tog 1>;
         };
 
-        mod_plus_parenthesis: mod_plus_parenthesis {
+        plus_parenthesis: plus_parenthesis {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_PLUS_PARENTHESIS";
+            label = "PLUS_PARENTHESIS";
             bindings = <&kp PLUS>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        volume_brightness_down: volume_brightness_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLUME_BRIGHTNESS_DOWN";
+            bindings = <&kp C_VOLUME_DOWN>, <&kp C_BRIGHTNESS_DEC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        volume_brightness_up: volume_brightness_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VOLUME_BRIGHTNESS_UP";
+            bindings = <&kp C_VOLUME_UP>, <&kp C_BRIGHTNESS_INC>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n_tilde: n_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N_TILDE";
+            bindings = <&n_tilde_lower>, <&n_tilde_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        a_acute: a_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_ACUTE";
+            bindings = <&a_acute_lower>, <&a_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        e_acute: e_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_ACUTE";
+            bindings = <&e_acute_lower>, <&e_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        i_acute: i_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_ACUTE";
+            bindings = <&i_acute_lower>, <&i_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        o_acute: o_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_ACUTE";
+            bindings = <&o_acute_lower>, <&o_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        u_acute: u_acute {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_ACUTE";
+            bindings = <&u_acute_lower>, <&u_acute_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        u_diaeresis: u_diaeresis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_DIAERESIS";
+            bindings = <&u_diaeresis_lower>, <&u_diaeresis_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RCTL)>;
+        };
+
+        backslash_questionmarkreverse: backslash_questionmarkreverse {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSLASH_QUESTIONMARKREVERSE";
+            bindings = <&kp BACKSLASH>, <&question_mark_reverse>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        semicolon_lessthanequal: semicolon_lessthanequal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMICOLON_LESSTHANEQUAL";
+            bindings = <&kp SEMICOLON>, <&less_than_equal>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        colon_greaterthanequal: colon_greaterthanequal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COLON_GREATERTHANEQUAL";
+            bindings = <&kp SEMICOLON>, <&greater_than_equal>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -77,7 +185,7 @@
     };
 
     macros {
-        n_tilde: n_tilde {
+        n_tilde_lower: n_tilde_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -88,10 +196,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "N_TILDE";
+            label = "N_TILDE_LOWER";
         };
 
-        N_tilde_upper: N_tilde_upper {
+        n_tilde_upper: n_tilde_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -105,7 +213,7 @@
             label = "N_TILDE_UPPER";
         };
 
-        a_acute: a_acute {
+        a_acute_lower: a_acute_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -116,10 +224,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "A_ACUTE";
+            label = "A_ACUTE_LOWER";
         };
 
-        A_acute_upper: A_acute_upper {
+        a_acute_upper: a_acute_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -133,7 +241,7 @@
             label = "A_ACUTE_UPPER";
         };
 
-        e_acute: e_acute {
+        e_acute_lower: e_acute_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -144,10 +252,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "E_ACUTE";
+            label = "E_ACUTE_LOWER";
         };
 
-        E_acute_upper: E_acute_upper {
+        e_acute_upper: e_acute_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -161,7 +269,7 @@
             label = "E_ACUTE_UPPER";
         };
 
-        i_acute: i_acute {
+        i_acute_lower: i_acute_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -172,10 +280,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "I_ACUTE";
+            label = "I_ACUTE_LOWER";
         };
 
-        I_acute_upper: I_acute_upper {
+        i_acute_upper: i_acute_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -189,7 +297,7 @@
             label = "I_ACUTE_UPPER";
         };
 
-        o_acute: o_acute {
+        o_acute_lower: o_acute_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -200,10 +308,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "O_ACUTE";
+            label = "O_ACUTE_LOWER";
         };
 
-        O_acute_upper: O_acute_upper {
+        o_acute_upper: o_acute_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -217,7 +325,7 @@
             label = "O_ACUTE_UPPER";
         };
 
-        u_acute: u_acute {
+        u_acute_lower: u_acute_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -228,10 +336,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "U_ACUTE";
+            label = "U_ACUTE_LOWER";
         };
 
-        U_acute_upper: U_acute_upper {
+        u_acute_upper: u_acute_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -245,7 +353,7 @@
             label = "U_ACUTE_UPPER";
         };
 
-        u_diaeresis: u_diaeresis {
+        u_diaeresis_lower: u_diaeresis_lower {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -256,10 +364,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "U_DIAERESIS";
+            label = "U_DIAERESIS_LOWER";
         };
 
-        U_diaeresis_upper: U_diaeresis_upper {
+        u_diaeresis_upper: u_diaeresis_upper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -287,7 +395,7 @@
             label = "QUESTION_MARK_REVERSE";
         };
 
-        lessthan_equal: lessthan_equal {
+        less_than_equal: less_than_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -298,10 +406,10 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "LESSTHAN_EQUAL";
+            label = "LESS_THAN_EQUAL";
         };
 
-        greaterthan_equal: greaterthan_equal {
+        greater_than_equal: greater_than_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -312,7 +420,7 @@
                 <&macro_release>,
                 <&kp LEFT_ALT>;
 
-            label = "GREATERTHAN_EQUAL";
+            label = "GREATER_THAN_EQUAL";
         };
 
         approx_equal: approx_equal {
@@ -1435,11 +1543,11 @@
 
         number_layer {
             bindings = <
-&trans  &kp F1             &kp F2         &kp F3          &kp F4             &kp F5                                   &kp HOME        &kp N7           &kp N8  &kp N9      &mod_plus_parenthesis  &kp DELETE
-&trans  &bt BT_CLR         &kp PAGE_UP    &kp C_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS              &kp F11
-&trans  &ext_power EP_TOG  &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT                               &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp ASTERISK           &trans
-&trans  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4     &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp SLASH              &trans
-&trans  &trans             &trans         &trans          &trans             &trans           &trans  &trans          &trans                                               &kp EQUAL              &trans
+&trans  &kp F1             &kp F2         &kp F3          &kp F4                   &kp F5                                         &kp HOME        &kp N7           &kp N8  &kp N9      &plus_parenthesis  &kp DELETE
+&trans  &bt BT_CLR         &kp PAGE_UP    &kp C_MUTE      &volume_brightness_down  &volume_brightness_up                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS          &kp F11
+&trans  &ext_power EP_TOG  &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE         &kp C_NEXT                                     &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp ASTERISK       &trans
+&trans  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4           &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp SLASH          &trans
+&trans  &trans             &trans         &trans          &trans                   &trans                 &trans  &trans          &trans                                               &kp EQUAL          &trans
             >;
 
             label = "NUM";
@@ -1491,11 +1599,11 @@
 
         special_lower {
             bindings = <
-&trans  &kp PIPE     &trans  &trans             &trans            &trans                                   &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans       &trans  &e_acute           &reg_superscript  &tm_superscript                          &trans    &u_acute  &i_acute  &o_acute          &kp MINUS          &trans
-&trans  &a_acute     &trans  &degree_symbol     &trans            &trans                                   &trans    &trans    &trans    &trans            &trans             &trans
-&mo 8   &trans       &trans  &copy_superscript  &u_diaeresis      &trans           &trans  &trans          &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &mo 8
-&trans  &plus_minus  &trans  &trans             &trans            &trans           &trans  &kp KP_NUMLOCK  &trans                                          &approx_equal      &trans
+&trans  &kp PIPE        &trans  &trans             &trans              &trans                                   &trans          &trans          &trans                    &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &trans
+&trans  &trans          &trans  &e_acute_lower     &reg_superscript    &tm_superscript                          &trans          &u_acute_lower  &i_acute_lower            &o_acute_lower           &kp MINUS          &trans
+&trans  &a_acute_lower  &trans  &degree_symbol     &trans              &trans                                   &trans          &trans          &trans                    &trans                   &trans             &trans
+&mo 8   &trans          &trans  &copy_superscript  &u_diaeresis_lower  &trans           &trans  &trans          &n_tilde_lower  &trans          &semicolon_lessthanequal  &colon_greaterthanequal  &kp BACKSLASH      &mo 8
+&trans  &plus_minus     &trans  &trans             &trans              &trans           &trans  &kp KP_NUMLOCK  &trans                                                                             &approx_equal      &trans
             >;
 
             label = "SPECIAL1";
@@ -1503,11 +1611,11 @@
 
         special_upper {
             bindings = <
-&trans  &exclamation_mark_reverse  &trans  &trans          &trans              &trans                  &trans          &trans          &trans           &kp LEFT_BRACE      &kp RIGHT_BRACE         &trans
-&trans  &trans                     &trans  &E_acute_upper  &trans              &trans                  &trans          &U_acute_upper  &I_acute_upper   &O_acute_upper      &kp UNDERSCORE          &trans
-&trans  &A_acute_upper             &trans  &trans          &trans              &trans                  &trans          &trans          &trans           &trans              &trans                  &trans
-&trans  &trans                     &trans  &trans          &U_diaeresis_upper  &trans  &trans  &trans  &N_tilde_upper  &trans          &lessthan_equal  &greaterthan_equal  &question_mark_reverse  &trans
-&trans  &almost_equal              &trans  &trans          &trans              &trans  &trans  &trans  &trans                                                               &not_equal              &trans
+&trans  &exclamation_mark_reverse  &trans  &trans          &trans              &trans                  &trans          &trans          &trans            &kp LEFT_BRACE       &kp RIGHT_BRACE         &trans
+&trans  &trans                     &trans  &e_acute_upper  &trans              &trans                  &trans          &u_acute_upper  &i_acute_upper    &o_acute_upper       &kp UNDERSCORE          &trans
+&trans  &a_acute_upper             &trans  &trans          &trans              &trans                  &trans          &trans          &trans            &trans               &trans                  &trans
+&trans  &trans                     &trans  &trans          &u_diaeresis_upper  &trans  &trans  &trans  &n_tilde_upper  &trans          &less_than_equal  &greater_than_equal  &question_mark_reverse  &trans
+&trans  &almost_equal              &trans  &trans          &trans              &trans  &trans  &trans  &trans                                                                 &not_equal              &trans
             >;
 
             label = "SPECIAL2";
