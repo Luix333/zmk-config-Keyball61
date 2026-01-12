@@ -66,9 +66,9 @@
             bindings = <&kp LEFT_CONTROL>, <&tog 1>;
         };
 
-        plus_parenthesis: plus_parenthesis {
+        plus_leftparenthesis: plus_leftparenthesis {
             compatible = "zmk,behavior-mod-morph";
-            label = "PLUS_PARENTHESIS";
+            label = "PLUS_LEFTPARENTHESIS";
             bindings = <&kp PLUS>, <&kp RIGHT_PARENTHESIS>;
 
             #binding-cells = <0>;
@@ -178,6 +178,141 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COLON_GREATERTHANEQUAL";
             bindings = <&kp SEMICOLON>, <&greater_than_equal>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        approxequal_notequal: approxequal_notequal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APPROXEQUAL_NOTEQUAL";
+            bindings = <&approx_equal>, <&not_equal>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        plusminus_almostequal: plusminus_almostequal {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUSMINUS_ALMOSTEQUAL";
+            bindings = <&plus_minus>, <&almost_equal>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        pipe_exclamationmarkreverse: pipe_exclamationmarkreverse {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PIPE_EXCLAMATIONMARKREVERSE";
+            bindings = <&kp PIPE>, <&exclamation_mark_reverse>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bracket_brace_left: bracket_brace_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACKET_BRACE_LEFT";
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        bracket_brace_right: bracket_brace_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACKET_BRACE_RIGHT";
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        one_script: one_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONE_SCRIPT";
+            bindings = <&one_subscript>, <&one_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        two_script: two_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TWO_SCRIPT";
+            bindings = <&two_subscript>, <&two_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        three_script: three_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "THREE_SCRIPT";
+            bindings = <&three_subscript>, <&three_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        four_script: four_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FOUR_SCRIPT";
+            bindings = <&four_subscript>, <&four_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        five_script: five_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FIVE_SCRIPT";
+            bindings = <&five_subscript>, <&five_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        six_script: six_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SIX_SCRIPT";
+            bindings = <&six_subscript>, <&six_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        seven_script: seven_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEVEN_SCRIPT";
+            bindings = <&seven_subscript>, <&seven_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        eight_script: eight_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EIGHT_SCRIPT";
+            bindings = <&eight_subscript>, <&eight_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        nine_script: nine_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_SCRIPT";
+            bindings = <&nine_subscript>, <&nine_superscript>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        zero_script: zero_script {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_SCRIPT";
+            bindings = <&zero_subscript>, <&zero_superscript>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -1526,7 +1661,7 @@
 &kp TAB           &kp Q      &kp W     &kp E     &kp R   &kp T                    &kp Y        &kp U   &kp I      &kp O          &kp P      &to 1
 &kp CAPS          &kp A      &kp S     &kp D     &kp F   &kp G                    &kp H        &kp J   &kp K      &kp L          &kp SQT    &kp ENTER
 &kp LEFT_SHIFT    &kp Z      &kp X     &kp C     &kp V   &kp B      &kp N  &kp B  &kp N        &kp M   &kp COMMA  &kp DOT        &kp FSLH   &kp RSHFT
-&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &mo 9   &kp SPACE  &mo 2  &mo 2  &lt 7 SPACE                                    &kp EQUAL  &kp RCTRL
+&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &mo 8   &kp SPACE  &mo 2  &mo 2  &lt 7 SPACE                                    &kp EQUAL  &kp RCTRL
             >;
         };
 
@@ -1543,11 +1678,11 @@
 
         number_layer {
             bindings = <
-&trans  &kp F1             &kp F2         &kp F3          &kp F4                   &kp F5                                         &kp HOME        &kp N7           &kp N8  &kp N9      &plus_parenthesis  &kp DELETE
-&trans  &bt BT_CLR         &kp PAGE_UP    &kp C_MUTE      &volume_brightness_down  &volume_brightness_up                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS          &kp F11
-&trans  &ext_power EP_TOG  &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE         &kp C_NEXT                                     &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp ASTERISK       &trans
-&trans  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4           &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp SLASH          &trans
-&trans  &trans             &trans         &trans          &trans                   &trans                 &trans  &trans          &trans                                               &kp EQUAL          &trans
+&trans  &kp F1             &kp F2         &kp F3          &kp F4                   &kp F5                                         &kp HOME        &kp N7           &kp N8  &kp N9      &plus_leftparenthesis  &kp DELETE
+&trans  &bt BT_CLR         &kp PAGE_UP    &kp C_MUTE      &volume_brightness_down  &volume_brightness_up                          &kp END         &kp N4           &kp N5  &kp N6      &kp MINUS              &kp F11
+&trans  &ext_power EP_TOG  &kp PAGE_DOWN  &kp C_PREVIOUS  &kp C_PLAY_PAUSE         &kp C_NEXT                                     &kp UP_ARROW    &kp N1           &kp N2  &kp N3      &kp ASTERISK           &trans
+&trans  &bt BT_SEL 0       &bt BT_SEL 1   &bt BT_SEL 2    &bt BT_SEL 3             &bt BT_SEL 4           &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N0  &kp PERIOD  &kp SLASH              &trans
+&trans  &trans             &trans         &trans          &trans                   &trans                 &trans  &trans          &trans                                               &kp EQUAL              &trans
             >;
 
             label = "NUM";
@@ -1597,40 +1732,28 @@
             >;
         };
 
-        special_lower {
+        special_layer {
             bindings = <
-&trans  &kp PIPE        &trans  &trans             &trans              &trans                                   &trans          &trans          &trans                    &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &trans
-&trans  &trans          &trans  &e_acute_lower     &reg_superscript    &tm_superscript                          &trans          &u_acute_lower  &i_acute_lower            &o_acute_lower           &kp MINUS          &trans
-&trans  &a_acute_lower  &trans  &degree_symbol     &trans              &trans                                   &trans          &trans          &trans                    &trans                   &trans             &trans
-&mo 8   &trans          &trans  &copy_superscript  &u_diaeresis_lower  &trans           &trans  &trans          &n_tilde_lower  &trans          &semicolon_lessthanequal  &colon_greaterthanequal  &kp BACKSLASH      &mo 8
-&trans  &plus_minus     &trans  &trans             &trans              &trans           &trans  &kp KP_NUMLOCK  &trans                                                                             &approx_equal      &trans
+&trans  &pipe_exclamationmarkreverse  &trans  &trans             &trans            &trans                                   &trans    &trans    &trans                    &bracket_brace_left      &bracket_brace_right            &trans
+&trans  &trans                        &trans  &e_acute           &reg_superscript  &tm_superscript                          &trans    &u_acute  &i_acute                  &o_acute                 &kp MINUS                       &trans
+&trans  &a_acute                      &trans  &degree_symbol     &trans            &trans                                   &trans    &trans    &trans                    &trans                   &trans                          &trans
+&mo 0   &trans                        &trans  &copy_superscript  &u_diaeresis      &trans           &trans  &trans          &n_tilde  &trans    &semicolon_lessthanequal  &colon_greaterthanequal  &backslash_questionmarkreverse  &mo 0
+&trans  &plusminus_almostequal        &trans  &trans             &trans            &trans           &trans  &kp KP_NUMLOCK  &trans                                                                 &approxequal_notequal           &trans
             >;
 
-            label = "SPECIAL1";
+            label = "SPECIAL";
         };
 
-        special_upper {
+        greek_layer {
             bindings = <
-&trans  &exclamation_mark_reverse  &trans  &trans          &trans              &trans                  &trans          &trans          &trans            &kp LEFT_BRACE       &kp RIGHT_BRACE         &trans
-&trans  &trans                     &trans  &e_acute_upper  &trans              &trans                  &trans          &u_acute_upper  &i_acute_upper    &o_acute_upper       &kp UNDERSCORE          &trans
-&trans  &a_acute_upper             &trans  &trans          &trans              &trans                  &trans          &trans          &trans            &trans               &trans                  &trans
-&trans  &trans                     &trans  &trans          &u_diaeresis_upper  &trans  &trans  &trans  &n_tilde_upper  &trans          &less_than_equal  &greater_than_equal  &question_mark_reverse  &trans
-&trans  &almost_equal              &trans  &trans          &trans              &trans  &trans  &trans  &trans                                                                 &not_equal              &trans
+&trans  &one_script   &two_script   &three_script   &four_script   &five_script                  &six_script  &seven_script   &eight_script  &nine_script    &zero_script  &trans
+&trans  &theta_lower  &omega_lower  &epsilon_lower  &rho_lower     &tau_lower                    &psi_lower   &upsilon_lower  &iota_lower    &omicron_lower  &pi_lower     &trans
+&trans  &alpha_lower  &sigma_lower  &delta_lower    &phi_lower     &gamma_lower                  &eta_lower   &trans          &kappa_lower   &lambda_lower   &trans        &trans
+&trans  &zeta_lower   &xi_lower     &chi_lower      &sigmaf_lower  &beta_lower   &trans  &trans  &nu_lower    &mu_lower       &trans         &trans          &trans        &trans
+&trans  &trans        &trans        &trans          &trans         &trans        &trans  &trans  &trans                                                      &trans        &trans
             >;
 
-            label = "SPECIAL2";
-        };
-
-        greek_lower {
-            bindings = <
-&trans  &one_subscript  &two_subscript  &three_subscript  &four_subscript  &five_subscript                  &six_subscript  &seven_subscript  &eight_subscript  &nine_subscript  &zero_subscript  &trans
-&trans  &theta_lower    &omega_lower    &epsilon_lower    &rho_lower       &tau_lower                       &psi_lower      &upsilon_lower    &iota_lower       &omicron_lower   &pi_lower        &trans
-&trans  &alpha_lower    &sigma_lower    &delta_lower      &phi_lower       &gamma_lower                     &eta_lower      &trans            &kappa_lower      &lambda_lower    &trans           &trans
-&mo 10  &zeta_lower     &xi_lower       &chi_lower        &sigmaf_lower    &beta_lower      &trans  &trans  &nu_lower       &mu_lower         &trans            &trans           &trans           &mo 10
-&trans  &trans          &trans          &trans            &trans           &trans           &trans  &trans  &trans                                                               &trans           &trans
-            >;
-
-            label = "GREEK1";
+            label = "GREEK";
         };
 
         greek_upper {
