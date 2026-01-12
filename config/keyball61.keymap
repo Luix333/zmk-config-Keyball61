@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -347,6 +347,1014 @@
 
             label = "EXCLAMATION_MARK_REVERSE";
         };
+
+        almost_equal: almost_equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALMOST_EQUAL";
+        };
+
+        degree_symbol: degree_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DEGREE_SYMBOL";
+        };
+
+        plus_minus: plus_minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PLUS_MINUS";
+        };
+
+        zero_superscript: zero_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ZERO_SUPERSCRIPT";
+        };
+
+        one_superscript: one_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_8 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ONE_SUPERSCRIPT";
+        };
+
+        two_superscript: two_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TWO_SUPERSCRIPT";
+        };
+
+        three_superscript: three_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "THREE_SUPERSCRIPT";
+        };
+
+        four_superscript: four_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FOUR_SUPERSCRIPT";
+        };
+
+        five_superscript: five_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_0 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FIVE_SUPERSCRIPT";
+        };
+
+        six_superscript: six_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SIX_SUPERSCRIPT";
+        };
+
+        seven_superscript: seven_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SEVEN_SUPERSCRIPT";
+        };
+
+        eight_superscript: eight_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EIGHT_SUPERSCRIPT";
+        };
+
+        nine_superscript: nine_superscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "NINE_SUPERSCRIPT";
+        };
+
+        alpha_lower: alpha_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALPHA_LOWER";
+        };
+
+        alpha_upper: alpha_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALPHA_UPPER";
+        };
+
+        beta_lower: beta_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "BETA_LOWER";
+        };
+
+        beta_upper: beta_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "BETA_UPPER";
+        };
+
+        gamma_lower: gamma_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "GAMMA_LOWER";
+        };
+
+        gamma_upper: gamma_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "GAMMA_UPPER";
+        };
+
+        delta_lower: delta_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DELTA_LOWER";
+        };
+
+        delta_upper: delta_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DELTA_UPPER";
+        };
+
+        epsilon_lower: epsilon_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EPSILON_LOWER";
+        };
+
+        epsilon_upper: epsilon_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EPSILON_UPPER";
+        };
+
+        zeta_lower: zeta_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ZETA_LOWER";
+        };
+
+        zeta_upper: zeta_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp LC(KP_NUMBER_8)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ZETA_UPPER";
+        };
+
+        eta_lower: eta_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ETA_LOWER";
+        };
+
+        eta_upper: eta_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1 &kp LC(KP_NUMBER_9)>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ETA_UPPER";
+        };
+
+        theta_lower: theta_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "THETA_LOWER";
+        };
+
+        theta_upper: theta_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "THETA_UPPER";
+        };
+
+        iota_lower: iota_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "IOTA_LOWER";
+        };
+
+        iota_upper: iota_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "IOTA_UPPER";
+        };
+
+        kappa_lower: kappa_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "KAPPA_LOWER";
+        };
+
+        kappa_upper: kappa_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "KAPPA_UPPER";
+        };
+
+        lambda_lower: lambda_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "LAMBDA_LOWER";
+        };
+
+        lambda_upper: lambda_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "LAMBDA_UPPER";
+        };
+
+        mu_lower: mu_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MU_LOWER";
+        };
+
+        mu_upper: mu_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MU_UPPER";
+        };
+
+        nu_lower: nu_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "NU_LOWER";
+        };
+
+        nu_upper: nu_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "NU_UPPER";
+        };
+
+        xi_lower: xi_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "XI_LOWER";
+        };
+
+        xi_upper: xi_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "XI_UPPER";
+        };
+
+        omicron_lower: omicron_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_5 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OMICRON_LOWER";
+        };
+
+        omicron_upper: omicron_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OMICRON_UPPER";
+        };
+
+        pi_lower: pi_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PI_LOWER";
+        };
+
+        pi_upper: pi_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PI_UPPER";
+        };
+
+        rho_lower: rho_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "RHO_LOWER";
+        };
+
+        rho_upper: rho_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "RHO_UPPER";
+        };
+
+        sigma_lower: sigma_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SIGMA_LOWER";
+        };
+
+        sigma_upper: sigma_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SIGMA_UPPER";
+        };
+
+        tau_lower: tau_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TAU_LOWER";
+        };
+
+        tau_upper: tau_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TAU_UPPER";
+        };
+
+        upsilon_lower: upsilon_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "UPSILON_LOWER";
+        };
+
+        upsilon_upper: upsilon_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_7 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "UPSILON_UPPER";
+        };
+
+        phi_lower: phi_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PHI_LOWER";
+        };
+
+        phi_upper: phi_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PHI_UPPER";
+        };
+
+        chi_lower: chi_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "CHI_LOWER";
+        };
+
+        chi_upper: chi_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "CHI_UPPER";
+        };
+
+        psi_lower: psi_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PSI_LOWER";
+        };
+
+        psi_upper: psi_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "PSI_UPPER";
+        };
+
+        omega_lower: omega_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OMEGA_LOWER";
+        };
+
+        omega_upper: omega_upper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "OMEGA_UPPER";
+        };
+
+        sigmaf_lower: sigmaf_lower {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SIGMAF_LOWER";
+        };
+
+        zero_subscript: zero_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ZERO_SUBSCRIPT";
+        };
+
+        one_subscript: one_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ONE_SUBSCRIPT";
+        };
+
+        two_subscript: two_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "TWO_SUBSCRIPT";
+        };
+
+        three_subscript: three_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "THREE_SUBSCRIPT";
+        };
+
+        four_subscript: four_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FOUR_SUBSCRIPT";
+        };
+
+        five_subscript: five_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "FIVE_SUBSCRIPT";
+        };
+
+        six_subscript: six_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SIX_SUBSCRIPT";
+        };
+
+        seven_subscript: seven_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "SEVEN_SUBSCRIPT";
+        };
+
+        eight_subscript: eight_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "EIGHT_SUBSCRIPT";
+        };
+
+        nine_subscript: nine_subscript {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "NINE_SUBSCRIPT";
+        };
     };
 
     keymap {
@@ -355,11 +1363,11 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&gresc            &kp N1     &kp N2    &kp N3    &kp N4       &kp N5                   &kp N6       &kp N7  &kp N8     &lmt2 MCLK N9  &lt 5 N0   &kp BSPC
-&kp TAB           &kp Q      &kp W     &kp E     &kp R        &kp T                    &kp Y        &kp U   &kp I      &kp O          &kp P      &to 1
-&kp CAPS          &kp A      &kp S     &kp D     &kp F        &kp G                    &kp H        &kp J   &kp K      &kp L          &kp SQT    &kp ENTER
-&kp LEFT_SHIFT    &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N  &kp B  &kp N        &kp M   &kp COMMA  &kp DOT        &kp FSLH   &kp RSHFT
-&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &key_repeat  &kp SPACE  &mo 2  &mo 2  &lt 7 SPACE                                    &kp EQUAL  &kp RCTRL
+&gresc            &kp N1     &kp N2    &kp N3    &kp N4  &kp N5                   &kp N6       &kp N7  &kp N8     &lmt2 MCLK N9  &lt 5 N0   &kp BSPC
+&kp TAB           &kp Q      &kp W     &kp E     &kp R   &kp T                    &kp Y        &kp U   &kp I      &kp O          &kp P      &to 1
+&kp CAPS          &kp A      &kp S     &kp D     &kp F   &kp G                    &kp H        &kp J   &kp K      &kp L          &kp SQT    &kp ENTER
+&kp LEFT_SHIFT    &kp Z      &kp X     &kp C     &kp V   &kp B      &kp N  &kp B  &kp N        &kp M   &kp COMMA  &kp DOT        &kp FSLH   &kp RSHFT
+&kp LEFT_CONTROL  &kp GRAVE  &kp LGUI  &kp LALT  &mo 9   &kp SPACE  &mo 2  &mo 2  &lt 7 SPACE                                    &kp EQUAL  &kp RCTRL
             >;
         };
 
@@ -386,8 +1394,8 @@
             label = "NUM";
         };
 
-        symbol_layer {
-            label = "SYM";
+        mouse2_layer {
+            label = "MOUSE2";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &kp TAB         &kp UP_ARROW    &kp RIGHT_ARROW  &kp LEFT_SHIFT
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ALT     &kp LEFT_CONTROL
@@ -430,44 +1438,52 @@
             >;
         };
 
-        special1_layer {
+        special_lower {
             bindings = <
-&trans  &kp PIPE  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans    &trans  &e_acute  &trans        &trans                  &trans    &u_acute  &i_acute  &o_acute          &trans             &trans
-&trans  &a_acute  &trans  &trans    &trans        &trans                  &trans    &trans    &trans    &trans            &trans             &trans
-&mo 8   &trans    &trans  &trans    &u_diaeresis  &trans  &trans  &trans  &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &trans
-&trans  &trans    &trans  &trans    &trans        &trans  &trans  &trans  &trans                                          &approx_equal      &trans
+&trans  &kp PIPE     &trans  &trans          &trans        &trans                          &trans    &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans       &trans  &e_acute        &trans        &trans                          &trans    &u_acute  &i_acute  &o_acute          &kp MINUS          &trans
+&trans  &a_acute     &trans  &degree_symbol  &trans        &trans                          &trans    &trans    &trans    &trans            &trans             &trans
+&mo 8   &trans       &trans  &trans          &u_diaeresis  &trans  &trans  &trans          &n_tilde  &trans    &kp SEMI  &kp COLON         &kp BACKSLASH      &mo 8
+&trans  &plus_minus  &trans  &trans          &trans        &trans  &trans  &kp KP_NUMLOCK  &trans                                          &approx_equal      &trans
             >;
+
+            label = "SPECIAL1";
         };
 
-        special2_layer {
+        special_upper {
             bindings = <
 &trans  &exclamation_mark_reverse  &trans  &trans          &trans              &trans                  &trans          &trans          &trans           &kp LEFT_BRACE      &kp RIGHT_BRACE         &trans
-&trans  &trans                     &trans  &E_acute_upper  &trans              &trans                  &trans          &U_acute_upper  &I_acute_upper   &O_acute_upper      &trans                  &trans
+&trans  &trans                     &trans  &E_acute_upper  &trans              &trans                  &trans          &U_acute_upper  &I_acute_upper   &O_acute_upper      &kp UNDERSCORE          &trans
 &trans  &A_acute_upper             &trans  &trans          &trans              &trans                  &trans          &trans          &trans           &trans              &trans                  &trans
 &trans  &trans                     &trans  &trans          &U_diaeresis_upper  &trans  &trans  &trans  &N_tilde_upper  &trans          &lessthan_equal  &greaterthan_equal  &question_mark_reverse  &trans
-&trans  &trans                     &trans  &trans          &trans              &trans  &trans  &trans  &trans                                                               &not_equal              &trans
+&trans  &almost_equal              &trans  &trans          &trans              &trans  &trans  &trans  &trans                                                               &not_equal              &trans
             >;
+
+            label = "SPECIAL2";
         };
 
         greek_lower {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &one_subscript  &two_subscript  &three_subscript  &four_subscript  &five_subscript                  &six_subscript  &seven_subscript  &eight_subscript  &nine_subscript  &zero_subscript  &trans
+&trans  &theta_lower    &omega_lower    &epsilon_lower    &rho_lower       &tau_lower                       &psi_lower      &upsilon_lower    &iota_lower       &omicron_lower   &pi_lower        &trans
+&trans  &alpha_lower    &sigma_lower    &delta_lower      &phi_lower       &gamma_lower                     &eta_lower      &trans            &kappa_lower      &lambda_lower    &trans           &trans
+&mo 10  &zeta_lower     &xi_lower       &chi_lower        &sigmaf_lower    &beta_lower      &trans  &trans  &nu_lower       &mu_lower         &trans            &trans           &trans           &mo 10
+&trans  &trans          &trans          &trans            &trans           &trans           &trans  &trans  &trans                                                               &trans           &trans
             >;
+
+            label = "GREEK1";
         };
 
         greek_upper {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans  &trans
+&trans  &one_superscript  &two_superscript  &three_superscript  &four_superscript  &five_superscript                  &six_superscript  &seven_superscript  &eight_superscript  &nine_superscript  &zero_superscript  &trans
+&trans  &theta_upper      &omega_upper      &epsilon_upper      &rho_upper         &tau_upper                         &psi_upper        &upsilon_upper      &iota_upper         &omicron_upper     &pi_upper          &trans
+&trans  &alpha_upper      &sigma_upper      &delta_upper        &phi_upper         &gamma_upper                       &eta_upper        &trans              &kappa_upper        &lambda_upper      &trans             &trans
+&trans  &zeta_upper       &xi_upper         &chi_upper          &trans             &beta_upper        &trans  &trans  &nu_upper         &mu_upper           &trans              &trans             &trans             &trans
+&trans  &trans            &trans            &trans              &trans             &trans             &trans  &trans  &trans                                                                       &trans             &trans
             >;
+
+            label = "GREEK2";
         };
     };
 };
