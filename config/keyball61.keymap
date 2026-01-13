@@ -548,6 +548,8 @@
                 <&kp LALT>;
 
             label = "N_TILDE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         n_tilde_upper: n_tilde_upper {
@@ -578,6 +580,8 @@
                 <&kp LEFT_ALT>;
 
             label = "A_ACUTE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         a_acute_upper: a_acute_upper {
@@ -592,6 +596,8 @@
                 <&kp LEFT_ALT>;
 
             label = "A_ACUTE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         e_acute_lower: e_acute_lower {
@@ -606,6 +612,8 @@
                 <&kp LEFT_ALT>;
 
             label = "E_ACUTE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         e_acute_upper: e_acute_upper {
@@ -620,6 +628,8 @@
                 <&kp LEFT_ALT>;
 
             label = "E_ACUTE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         i_acute_lower: i_acute_lower {
@@ -634,6 +644,8 @@
                 <&kp LEFT_ALT>;
 
             label = "I_ACUTE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         i_acute_upper: i_acute_upper {
@@ -648,6 +660,8 @@
                 <&kp LEFT_ALT>;
 
             label = "I_ACUTE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         o_acute_lower: o_acute_lower {
@@ -662,6 +676,8 @@
                 <&kp LEFT_ALT>;
 
             label = "O_ACUTE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         o_acute_upper: o_acute_upper {
@@ -676,6 +692,8 @@
                 <&kp LEFT_ALT>;
 
             label = "O_ACUTE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         u_acute_lower: u_acute_lower {
@@ -690,6 +708,8 @@
                 <&kp LEFT_ALT>;
 
             label = "U_ACUTE_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         u_acute_upper: u_acute_upper {
@@ -704,6 +724,8 @@
                 <&kp LEFT_ALT>;
 
             label = "U_ACUTE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         u_diaeresis_lower: u_diaeresis_lower {
@@ -718,6 +740,8 @@
                 <&kp LEFT_ALT>;
 
             label = "U_DIAERESIS_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         u_diaeresis_upper: u_diaeresis_upper {
@@ -732,6 +756,8 @@
                 <&kp LEFT_ALT>;
 
             label = "U_DIAERESIS_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         question_mark_reverse: question_mark_reverse {
@@ -746,6 +772,8 @@
                 <&kp LEFT_ALT>;
 
             label = "QUESTION_MARK_REVERSE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         less_than_equal: less_than_equal {
@@ -760,6 +788,8 @@
                 <&kp LEFT_ALT>;
 
             label = "LESS_THAN_EQUAL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         greater_than_equal: greater_than_equal {
@@ -774,6 +804,8 @@
                 <&kp LEFT_ALT>;
 
             label = "GREATER_THAN_EQUAL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         approx_equal: approx_equal {
@@ -788,6 +820,8 @@
                 <&kp LEFT_ALT>;
 
             label = "APPROX_EQUAL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         not_equal: not_equal {
@@ -802,6 +836,8 @@
                 <&kp LEFT_ALT>;
 
             label = "NOT_EQUAL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         exclamation_mark_reverse: exclamation_mark_reverse {
@@ -816,6 +852,8 @@
                 <&kp LEFT_ALT>;
 
             label = "EXCLAMATION_MARK_REVERSE";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         almost_equal: almost_equal {
@@ -830,6 +868,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ALMOST_EQUAL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         degree_symbol: degree_symbol {
@@ -844,6 +884,8 @@
                 <&kp LEFT_ALT>;
 
             label = "DEGREE_SYMBOL";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         plus_minus: plus_minus {
@@ -858,6 +900,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PLUS_MINUS";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         zero_superscript: zero_superscript {
@@ -872,6 +916,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ZERO_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         one_superscript: one_superscript {
@@ -886,6 +932,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ONE_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         two_superscript: two_superscript {
@@ -900,6 +948,8 @@
                 <&kp LEFT_ALT>;
 
             label = "TWO_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         three_superscript: three_superscript {
@@ -914,6 +964,8 @@
                 <&kp LEFT_ALT>;
 
             label = "THREE_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         four_superscript: four_superscript {
@@ -928,6 +980,8 @@
                 <&kp LEFT_ALT>;
 
             label = "FOUR_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         five_superscript: five_superscript {
@@ -942,6 +996,8 @@
                 <&kp LEFT_ALT>;
 
             label = "FIVE_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         six_superscript: six_superscript {
@@ -956,6 +1012,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SIX_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         seven_superscript: seven_superscript {
@@ -970,6 +1028,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SEVEN_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         eight_superscript: eight_superscript {
@@ -984,6 +1044,8 @@
                 <&kp LEFT_ALT>;
 
             label = "EIGHT_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         nine_superscript: nine_superscript {
@@ -998,6 +1060,8 @@
                 <&kp LEFT_ALT>;
 
             label = "NINE_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         alpha_lower: alpha_lower {
@@ -1012,6 +1076,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ALPHA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         alpha_upper: alpha_upper {
@@ -1026,6 +1092,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ALPHA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         beta_lower: beta_lower {
@@ -1040,6 +1108,8 @@
                 <&kp LEFT_ALT>;
 
             label = "BETA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         beta_upper: beta_upper {
@@ -1054,6 +1124,8 @@
                 <&kp LEFT_ALT>;
 
             label = "BETA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         gamma_lower: gamma_lower {
@@ -1068,6 +1140,8 @@
                 <&kp LEFT_ALT>;
 
             label = "GAMMA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         gamma_upper: gamma_upper {
@@ -1082,6 +1156,8 @@
                 <&kp LEFT_ALT>;
 
             label = "GAMMA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         delta_lower: delta_lower {
@@ -1096,6 +1172,8 @@
                 <&kp LEFT_ALT>;
 
             label = "DELTA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         delta_upper: delta_upper {
@@ -1110,6 +1188,8 @@
                 <&kp LEFT_ALT>;
 
             label = "DELTA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         epsilon_lower: epsilon_lower {
@@ -1124,6 +1204,8 @@
                 <&kp LEFT_ALT>;
 
             label = "EPSILON_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         epsilon_upper: epsilon_upper {
@@ -1138,6 +1220,8 @@
                 <&kp LEFT_ALT>;
 
             label = "EPSILON_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         zeta_lower: zeta_lower {
@@ -1152,6 +1236,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ZETA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         zeta_upper: zeta_upper {
@@ -1166,6 +1252,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ZETA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         eta_lower: eta_lower {
@@ -1180,6 +1268,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ETA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         eta_upper: eta_upper {
@@ -1194,6 +1284,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ETA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         theta_lower: theta_lower {
@@ -1208,6 +1300,8 @@
                 <&kp LEFT_ALT>;
 
             label = "THETA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         theta_upper: theta_upper {
@@ -1222,6 +1316,8 @@
                 <&kp LEFT_ALT>;
 
             label = "THETA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         iota_lower: iota_lower {
@@ -1236,6 +1332,8 @@
                 <&kp LEFT_ALT>;
 
             label = "IOTA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         iota_upper: iota_upper {
@@ -1250,6 +1348,8 @@
                 <&kp LEFT_ALT>;
 
             label = "IOTA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         kappa_lower: kappa_lower {
@@ -1264,6 +1364,8 @@
                 <&kp LEFT_ALT>;
 
             label = "KAPPA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         kappa_upper: kappa_upper {
@@ -1278,6 +1380,8 @@
                 <&kp LEFT_ALT>;
 
             label = "KAPPA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         lambda_lower: lambda_lower {
@@ -1292,6 +1396,8 @@
                 <&kp LEFT_ALT>;
 
             label = "LAMBDA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         lambda_upper: lambda_upper {
@@ -1306,6 +1412,8 @@
                 <&kp LEFT_ALT>;
 
             label = "LAMBDA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         mu_lower: mu_lower {
@@ -1320,6 +1428,8 @@
                 <&kp LEFT_ALT>;
 
             label = "MU_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         mu_upper: mu_upper {
@@ -1334,6 +1444,8 @@
                 <&kp LEFT_ALT>;
 
             label = "MU_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         nu_lower: nu_lower {
@@ -1348,6 +1460,8 @@
                 <&kp LEFT_ALT>;
 
             label = "NU_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         nu_upper: nu_upper {
@@ -1362,6 +1476,8 @@
                 <&kp LEFT_ALT>;
 
             label = "NU_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         xi_lower: xi_lower {
@@ -1376,6 +1492,8 @@
                 <&kp LEFT_ALT>;
 
             label = "XI_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         xi_upper: xi_upper {
@@ -1390,6 +1508,8 @@
                 <&kp LEFT_ALT>;
 
             label = "XI_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         omicron_lower: omicron_lower {
@@ -1404,6 +1524,8 @@
                 <&kp LEFT_ALT>;
 
             label = "OMICRON_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         omicron_upper: omicron_upper {
@@ -1418,6 +1540,8 @@
                 <&kp LEFT_ALT>;
 
             label = "OMICRON_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         pi_lower: pi_lower {
@@ -1432,6 +1556,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PI_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         pi_upper: pi_upper {
@@ -1446,6 +1572,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PI_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         rho_lower: rho_lower {
@@ -1460,6 +1588,8 @@
                 <&kp LEFT_ALT>;
 
             label = "RHO_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         rho_upper: rho_upper {
@@ -1474,6 +1604,8 @@
                 <&kp LEFT_ALT>;
 
             label = "RHO_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         sigma_lower: sigma_lower {
@@ -1488,6 +1620,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SIGMA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         sigma_upper: sigma_upper {
@@ -1502,6 +1636,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SIGMA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         tau_lower: tau_lower {
@@ -1516,6 +1652,8 @@
                 <&kp LEFT_ALT>;
 
             label = "TAU_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         tau_upper: tau_upper {
@@ -1530,6 +1668,8 @@
                 <&kp LEFT_ALT>;
 
             label = "TAU_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         upsilon_lower: upsilon_lower {
@@ -1544,6 +1684,8 @@
                 <&kp LEFT_ALT>;
 
             label = "UPSILON_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         upsilon_upper: upsilon_upper {
@@ -1558,6 +1700,8 @@
                 <&kp LEFT_ALT>;
 
             label = "UPSILON_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         phi_lower: phi_lower {
@@ -1572,6 +1716,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PHI_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         phi_upper: phi_upper {
@@ -1586,6 +1732,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PHI_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         chi_lower: chi_lower {
@@ -1600,6 +1748,8 @@
                 <&kp LEFT_ALT>;
 
             label = "CHI_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         chi_upper: chi_upper {
@@ -1614,6 +1764,8 @@
                 <&kp LEFT_ALT>;
 
             label = "CHI_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         psi_lower: psi_lower {
@@ -1628,6 +1780,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PSI_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         psi_upper: psi_upper {
@@ -1642,6 +1796,8 @@
                 <&kp LEFT_ALT>;
 
             label = "PSI_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         omega_lower: omega_lower {
@@ -1656,6 +1812,8 @@
                 <&kp LEFT_ALT>;
 
             label = "OMEGA_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         omega_upper: omega_upper {
@@ -1670,6 +1828,8 @@
                 <&kp LEFT_ALT>;
 
             label = "OMEGA_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         sigmaf_lower: sigmaf_lower {
@@ -1684,6 +1844,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SIGMAF_LOWER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         zero_subscript: zero_subscript {
@@ -1698,6 +1860,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ZERO_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         one_subscript: one_subscript {
@@ -1712,6 +1876,8 @@
                 <&kp LEFT_ALT>;
 
             label = "ONE_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         two_subscript: two_subscript {
@@ -1726,6 +1892,8 @@
                 <&kp LEFT_ALT>;
 
             label = "TWO_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         three_subscript: three_subscript {
@@ -1740,6 +1908,8 @@
                 <&kp LEFT_ALT>;
 
             label = "THREE_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         four_subscript: four_subscript {
@@ -1754,6 +1924,8 @@
                 <&kp LEFT_ALT>;
 
             label = "FOUR_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         five_subscript: five_subscript {
@@ -1768,6 +1940,8 @@
                 <&kp LEFT_ALT>;
 
             label = "FIVE_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         six_subscript: six_subscript {
@@ -1782,6 +1956,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SIX_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         seven_subscript: seven_subscript {
@@ -1796,6 +1972,8 @@
                 <&kp LEFT_ALT>;
 
             label = "SEVEN_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         eight_subscript: eight_subscript {
@@ -1810,6 +1988,8 @@
                 <&kp LEFT_ALT>;
 
             label = "EIGHT_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         nine_subscript: nine_subscript {
@@ -1824,6 +2004,8 @@
                 <&kp LEFT_ALT>;
 
             label = "NINE_SUBSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         tm_superscript: tm_superscript {
@@ -1838,6 +2020,8 @@
                 <&kp LEFT_ALT>;
 
             label = "TM_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         reg_superscript: reg_superscript {
@@ -1852,6 +2036,8 @@
                 <&kp LEFT_ALT>;
 
             label = "REG_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         copy_superscript: copy_superscript {
@@ -1866,6 +2052,8 @@
                 <&kp LEFT_ALT>;
 
             label = "COPY_SUPERSCRIPT";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
     };
 
