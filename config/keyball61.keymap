@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -544,7 +544,8 @@
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "N_TILDE_LOWER";
         };
@@ -557,9 +558,12 @@
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_5>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "N_TILDE_UPPER";
+            wait-ms = <1>;
+            tap-ms = <1>;
         };
 
         a_acute_lower: a_acute_lower {
