@@ -317,6 +317,222 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        a_alpha: a_alpha {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_ALPHA";
+            bindings = <&alpha_lower>, <&alpha_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        b_beta: b_beta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_BETA";
+            bindings = <&beta_lower>, <&beta_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        g_gamma: g_gamma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "G_GAMMA";
+            bindings = <&gamma_lower>, <&gamma_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        d_delta: d_delta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "D_DELTA";
+            bindings = <&delta_lower>, <&delta_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_epsilon: e_epsilon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_EPSILON";
+            bindings = <&epsilon_lower>, <&epsilon_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        z_zeta: z_zeta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Z_ZETA";
+            bindings = <&zeta_lower>, <&zeta_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        h_eta: h_eta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "H_ETA";
+            bindings = <&eta_lower>, <&eta_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        q_theta: q_theta {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Q_THETA";
+            bindings = <&theta_lower>, <&theta_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_iota: i_iota {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_IOTA";
+            bindings = <&iota_lower>, <&iota_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        k_kappa: k_kappa {
+            compatible = "zmk,behavior-mod-morph";
+            label = "K_KAPPA";
+            bindings = <&kappa_lower>, <&kappa_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        l_lambda: l_lambda {
+            compatible = "zmk,behavior-mod-morph";
+            label = "L_LAMBDA";
+            bindings = <&lambda_lower>, <&lambda_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        m_mu: m_mu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "M_MU";
+            bindings = <&mu_lower>, <&mu_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        n_nu: n_nu {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N_NU";
+            bindings = <&nu_lower>, <&nu_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        x_xi: x_xi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "X_XI";
+            bindings = <&xi_lower>, <&xi_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_omikron: o_omikron {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_OMIKRON";
+            bindings = <&omicron_lower>, <&omicron_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        p_pi: p_pi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "P_PI";
+            bindings = <&pi_lower>, <&pi_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        r_rho: r_rho {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_RHO";
+            bindings = <&rho_lower>, <&rho_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        s_sigma: s_sigma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_SIGMA";
+            bindings = <&sigma_lower>, <&sigma_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        t_tau: t_tau {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_TAU";
+            bindings = <&tau_lower>, <&tau_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_upsilon: u_upsilon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_UPSILON";
+            bindings = <&upsilon_lower>, <&upsilon_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        f_phi: f_phi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_PHI";
+            bindings = <&phi_lower>, <&phi_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        c_chi: c_chi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_CHI";
+            bindings = <&chi_lower>, <&chi_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        y_psi: y_psi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Y_PSI";
+            bindings = <&psi_lower>, <&psi_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        w_omega: w_omega {
+            compatible = "zmk,behavior-mod-morph";
+            label = "W_OMEGA";
+            bindings = <&omega_lower>, <&omega_upper>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -1737,7 +1953,7 @@
 &trans  &pipe_exclamationmarkreverse  &trans  &trans             &trans            &trans                                   &trans    &trans    &trans                    &bracket_brace_left      &bracket_brace_right            &trans
 &trans  &trans                        &trans  &e_acute           &reg_superscript  &tm_superscript                          &trans    &u_acute  &i_acute                  &o_acute                 &kp MINUS                       &trans
 &trans  &a_acute                      &trans  &degree_symbol     &trans            &trans                                   &trans    &trans    &trans                    &trans                   &trans                          &trans
-&mo 0   &trans                        &trans  &copy_superscript  &u_diaeresis      &trans           &trans  &trans          &n_tilde  &trans    &semicolon_lessthanequal  &colon_greaterthanequal  &backslash_questionmarkreverse  &mo 0
+&trans  &trans                        &trans  &copy_superscript  &u_diaeresis      &trans           &trans  &trans          &n_tilde  &trans    &semicolon_lessthanequal  &colon_greaterthanequal  &backslash_questionmarkreverse  &trans
 &trans  &plusminus_almostequal        &trans  &trans             &trans            &trans           &trans  &kp KP_NUMLOCK  &trans                                                                 &approxequal_notequal           &trans
             >;
 
@@ -1746,26 +1962,14 @@
 
         greek_layer {
             bindings = <
-&trans  &one_script   &two_script   &three_script   &four_script   &five_script                  &six_script  &seven_script   &eight_script  &nine_script    &zero_script  &trans
-&trans  &theta_lower  &omega_lower  &epsilon_lower  &rho_lower     &tau_lower                    &psi_lower   &upsilon_lower  &iota_lower    &omicron_lower  &pi_lower     &trans
-&trans  &alpha_lower  &sigma_lower  &delta_lower    &phi_lower     &gamma_lower                  &eta_lower   &trans          &kappa_lower   &lambda_lower   &trans        &trans
-&trans  &zeta_lower   &xi_lower     &chi_lower      &sigmaf_lower  &beta_lower   &trans  &trans  &nu_lower    &mu_lower       &trans         &trans          &trans        &trans
-&trans  &trans        &trans        &trans          &trans         &trans        &trans  &trans  &trans                                                      &trans        &trans
+&trans  &one_script  &two_script  &three_script  &four_script   &five_script                   &six_script  &seven_script  &eight_script  &nine_script  &zero_script  &trans
+&trans  &q_theta     &w_omega     &e_epsilon     &r_rho         &t_tau                         &y_psi       &u_upsilon     &i_iota        &o_omikron    &p_pi         &trans
+&trans  &a_alpha     &s_sigma     &d_delta       &f_phi         &g_gamma                       &h_eta       &trans         &k_kappa       &l_lambda     &trans        &trans
+&trans  &z_zeta      &x_xi        &c_chi         &sigmaf_lower  &b_beta       &n_nu   &b_beta  &n_nu        &m_mu          &trans         &trans        &trans        &trans
+&trans  &trans       &trans       &trans         &trans         &trans        &trans  &trans   &trans                                                   &trans        &trans
             >;
 
             label = "GREEK";
-        };
-
-        greek_upper {
-            bindings = <
-&trans  &one_superscript  &two_superscript  &three_superscript  &four_superscript  &five_superscript                  &six_superscript  &seven_superscript  &eight_superscript  &nine_superscript  &zero_superscript  &trans
-&trans  &theta_upper      &omega_upper      &epsilon_upper      &rho_upper         &tau_upper                         &psi_upper        &upsilon_upper      &iota_upper         &omicron_upper     &pi_upper          &trans
-&trans  &alpha_upper      &sigma_upper      &delta_upper        &phi_upper         &gamma_upper                       &eta_upper        &trans              &kappa_upper        &lambda_upper      &trans             &trans
-&trans  &zeta_upper       &xi_upper         &chi_upper          &trans             &beta_upper        &trans  &trans  &nu_upper         &mu_upper           &trans              &trans             &trans             &trans
-&trans  &trans            &trans            &trans              &trans             &trans             &trans  &trans  &trans                                                                       &trans             &trans
-            >;
-
-            label = "GREEK2";
         };
     };
 };
