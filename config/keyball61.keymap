@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -2078,7 +2078,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                             &kp END         &kp ENTER        &mkp LCLK     &mkp RCLK  &kp LEFT_ALT   &kp LEFT_CONTROL
 &trans  &trans  &trans  &trans  &trans  &trans                             &kp UP_ARROW    &kp BACKSPACE    &kp DELETE    &mo 6      &kp PAGE_UP    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_WIN  &trans     &kp PAGE_DOWN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &lmt0 2 1  &lmt0 2 1       &lt 3 SPACE                                               &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &lmt0 2 1  &lmt0 2 1       &lt 3 SPACE                                               &trans         &none
             >;
         };
 
