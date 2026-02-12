@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+      url-base: https://github.com/zmkfirmware #https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
     - name: m165437 #new entry
