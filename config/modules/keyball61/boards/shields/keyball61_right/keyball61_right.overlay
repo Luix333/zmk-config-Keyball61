@@ -6,6 +6,11 @@
  
 #include "keyball61.dtsi"
 
+/* nice_view_gem expects an SPI bus label named nice_view_spi */
+nice_view_spi: &spi1 {
+    status = "okay";
+};
+
 &default_transform {
     col-offset = <7>;
 };
