@@ -15,7 +15,9 @@
 include:
   - board: nice_nano #_v2
     shield: keyball61_left nice_view_adapter nice_view_gem
+    cmake-args: -DZMK_EXTRA_MODULES=/__w/zmk-config-Keyball61/zmk-config-Keyball61/config/modules/keyball61
   - board: nice_nano #_v2
     shield: keyball61_right nice_view_gem
   - board: nice_nano #_v2
     shield: settings_reset
+      
