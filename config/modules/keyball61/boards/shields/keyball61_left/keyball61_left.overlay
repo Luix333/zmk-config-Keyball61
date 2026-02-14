@@ -6,6 +6,11 @@
 
 #include "keyball61.dtsi"
 
+/* nice_view_gem expects an SPI bus label named nice_view_spi */
+nice_view_spi: &spi1 {
+    status = "okay";
+};
+
 &kscan0 {
 	row-gpios
         = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
