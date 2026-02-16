@@ -1,4 +1,0 @@
-name: keyball61
-build:
-  settings:
-    board_root: .
