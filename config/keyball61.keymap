@@ -2100,7 +2100,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ALT     &kp LEFT_CONTROL
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &kp DELETE      &mo 6           &kp PG_UP        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT_WIN    &trans          &kp PG_DN        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                   &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                   &trans           &none
             >;
         };
 
