@@ -9,13 +9,13 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0 #feat/pointers-move-scroll
+      revision: v0.3 #feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
     - name: nice-view-gem #new entry
       remote: m165437 #new entry
-      revision: main #new entry
+      revision: v0.3.0 #new entry
   self:
     path: config
