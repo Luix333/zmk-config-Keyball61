@@ -33,20 +33,43 @@
     spi1_default: spi1_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 10)>,
-                <NRF_PSEL(SPIM_MISO, 0, 10)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 10)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 10)>;
         };
     };
 
     spi1_sleep: spi1_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 1, 13)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 10)>,
-                <NRF_PSEL(SPIM_MISO, 0, 10)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 10)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 10)>;
+            low-power-enable;
+        };
+    };
+
+    spi2_default: spi2_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                    <NRF_PSEL(SPIM_SCK, 0, 8)>;
+        };
+    };
+
+    spi2_sleep: spi2_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                    <NRF_PSEL(SPIM_SCK, 0, 8)>;
             low-power-enable;
         };
     };
 };
+
+&nice_view_spi {
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+};
+
 
 &spi1 {
     status = "okay";
@@ -64,50 +87,9 @@
         irq-gpios = <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         scroll-layers = <5>;
         snipe-layers = <6>;
-	//automouse-layer = <4>;
+		// automouse-layer = <1>;
         /*   reference if intends to map the behaviro more than 1 layer   */
         // scroll-layers = <2 3>;
-    };
-};
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 8)>;
-            low-power-enable;
-        };
-    };
-};
-
-&i2c0 {
-    status = "okay";
-    compatible = "nordic,nrf-twi";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        inversion-on;
-        prechargep = <0x22>;
     };
 };
 
@@ -118,4 +100,3 @@
 
   };
 };
-
