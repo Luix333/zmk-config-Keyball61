@@ -10,7 +10,7 @@
 #include "keyball61.dtsi"
 
 #define TB_SCROLL_SCALER_NUM 1
-#define TB_SCROLL_SCALER_DEN 4
+#define TB_SCROLL_SCALER_DEN 22
 #define TB_SNIPE_SCALER_NUM 1
 #define TB_SNIPE_SCALER_DEN 4
 
