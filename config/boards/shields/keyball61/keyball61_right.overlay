@@ -7,12 +7,15 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
+#include <input/processors/report_rate_limit.dtsi>
 #include "keyball61.dtsi"
 
 #define TB_SCROLL_SCALER_NUM 1
 #define TB_SCROLL_SCALER_DEN 22
 #define TB_SNIPE_SCALER_NUM 1
 #define TB_SNIPE_SCALER_DEN 4
+/* Coalesce motion into at most one report per 8 ms (125 Hz) so BLE can't fall behind and queue stale reports */
+#define TB_REPORT_INTERVAL_MS 8
 
 &default_transform {
     col-offset = <7>;
@@ -105,17 +108,21 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+    input-processors = <&zip_report_rate_limit TB_REPORT_INTERVAL_MS>;
 
+    /* Overrides don't run the base processors, so each one starts with the rate limit too */
     scroll {
         layers = <5>;
-        input-processors = <&zip_xy_scaler TB_SCROLL_SCALER_NUM TB_SCROLL_SCALER_DEN
+        input-processors = <&zip_report_rate_limit TB_REPORT_INTERVAL_MS
+                            &zip_xy_scaler TB_SCROLL_SCALER_NUM TB_SCROLL_SCALER_DEN
                             &zip_xy_to_scroll_mapper
                             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
     };
 
     snipe {
         layers = <6>;
-        input-processors = <&zip_xy_scaler TB_SNIPE_SCALER_NUM TB_SNIPE_SCALER_DEN>;
+        input-processors = <&zip_report_rate_limit TB_REPORT_INTERVAL_MS
+                            &zip_xy_scaler TB_SNIPE_SCALER_NUM TB_SNIPE_SCALER_DEN>;
     };
   };
 };
