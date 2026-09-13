@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware #https://github.com/petejohanson
-    - name: m165437
-      url-base: https://github.com/M165437
+    - name: luix333
+      url-base: https://github.com/Luix333
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
@@ -11,9 +11,9 @@ manifest:
       remote: zmkfirmware
       revision: 641514a97db345f499dd50b0360e594270f008fe # main @ 2026-08-21, keep in sync with .github/workflows/build.yml
       import: app/west.yml
-    - name: nice-view-gem
-      remote: m165437
-      revision: 0a50fe209d929c916c5664c6affd0f4977c6b012 # main @ 2026-02-27
+    - name: nice-view-portal
+      remote: luix333
+      revision: 4e56558157190211839364dad3f3efb6c856c293 # main @ 2026-09-13: M165437/nice-view-gem@0a50fe2 + portal_bigger animation
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
       revision: b056cb135525933743e2627150fb390f9d4b2461 # main @ 2026-03-07
