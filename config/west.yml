@@ -13,7 +13,7 @@ manifest:
       import: app/west.yml
     - name: nice-view-portal
       remote: luix333
-      revision: 4e56558157190211839364dad3f3efb6c856c293 # main @ 2026-09-13: M165437/nice-view-gem@0a50fe2 + portal_bigger animation
+      revision: b2852ef8a3edacefa47e196bcb36ee458467a5e6 # main @ 2026-09-13: M165437/nice-view-gem@0a50fe2 + portal_bigger animation
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
       revision: b056cb135525933743e2627150fb390f9d4b2461 # main @ 2026-03-07
