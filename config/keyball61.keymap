@@ -2098,11 +2098,11 @@
         mouse3_layer {
             label = "MOUSE3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &kp TAB       &mo 10  &mo 12        &kp LEFT_SHIFT
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &mo 11        &mo 10  &kp LEFT_ALT  &kp LEFT_CONTROL
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &kp DELETE    &mo 7   &kp PG_UP     &none
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT_WIN  &trans  &kp PG_DN     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans        &none
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &kp TAB       &mo 10  &mo 12     &kp LEFT_SHIFT
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &mo 11        &mo 10  &mo 12     &kp LEFT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &mo 11        &mo 7   &kp PG_UP  &none
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT_WIN  &trans  &kp PG_DN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &trans     &none
             >;
         };
 
