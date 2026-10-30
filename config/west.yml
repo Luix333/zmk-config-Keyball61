@@ -17,5 +17,8 @@ manifest:
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
       revision: b056cb135525933743e2627150fb390f9d4b2461 # main @ 2026-03-07
+    - name: zmk-spacemouse
+      remote: luix333
+      revision: 8851731faacfdddbde715059919212e8535d5cee # main @ 2026-10-30
   self:
     path: config
