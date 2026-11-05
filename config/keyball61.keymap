@@ -2078,7 +2078,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                             &kp HOME        &kp ESCAPE       &kp TAB       &mkp RCLK  &mo 6         &kp LEFT_SHIFT
 &trans  &trans  &trans  &trans  &trans  &trans                             &kp END         &kp ENTER        &mkp LCLK     &mkp MCLK  &kp LEFT_ALT  &kp LEFT_CONTROL
-&trans  &trans  &trans  &trans  &trans  &trans                             &kp UP_ARROW    &kp BACKSPACE    &kp DELETE    &mo 7      &kp PG_UP     &mo 3
+&trans  &trans  &trans  &trans  &trans  &trans                             &kp UP_ARROW    &kp BACKSPACE    &kp DELETE    &mo 7      &kp PG_UP     &lt 3 ENTER
 &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_WIN  &none      &kp PG_DN     &none
 &trans  &trans  &trans  &trans  &trans  &trans  &lmt0 4 1  &lmt0 4 1       &lt 2 SPACE                                               &trans        &none
             >;
@@ -2089,14 +2089,14 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &kp TAB         &kp UP_ARROW    &kp RIGHT_ARROW  &kp LEFT_SHIFT
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ALT     &kp LEFT_CONTROL
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &kp DELETE      &mo 7           &kp PG_UP        &mo 3
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans    &kp BACKSPACE  &kp DELETE      &mo 7           &kp PG_UP        &lt 3 ENTER
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp LEFT_WIN    &trans          &kp PG_DN        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                                   &trans           &none
             >;
         };
 
-        mouse3_layer {
-            label = "MOUSE3";
+        spacemouse_layer {
+            label = "SPACE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp HOME  &kp ESCAPE     &kp TAB       &mo 10  &mo 12     &kp LEFT_SHIFT
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp END   &kp ENTER      &mo 11        &mo 10  &mo 12     &kp LEFT_CONTROL
